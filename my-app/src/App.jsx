@@ -36,6 +36,18 @@ const App = () => {
       
     })
   },[cells])
+  useEffect(()=>{
+    if (cells.every((cell)=>cell !=="" && !win)) {
+      setwin("draw !!")
+      
+    }
+   
+
+   
+
+      
+  
+  },[cells])
  
 
  
